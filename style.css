@@ -1,0 +1,56 @@
+/* style.css: this file controls how the page LOOKS.
+   Each block picks out some elements (the "selector") and then lists
+   properties to apply to them, between curly brackets. */
+
+/* Applies to the whole page */
+body {
+  font-family: Georgia, "Times New Roman", serif; /* the typeface; later ones are fall-backs */
+  line-height: 1.6;                /* space between lines of text */
+  color: #222;                     /* text colour (a very dark grey) */
+  background-color: #f7f5f0;       /* page background (a soft off-white) */
+  margin: 0;                       /* removes the browser's default outer gap */
+}
+
+/* The banner at the top */
+header {
+  background-color: #2f4f4f;       /* dark slate green */
+  color: #fff;                     /* white text */
+  padding: 1.5rem 1rem;            /* inner space: top/bottom, then left/right */
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;              /* top, left/right, bottom */
+}
+
+/* The navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;           /* removes the underline */
+  margin: 0 0.75rem;               /* space between links */
+}
+
+nav a:hover {
+  text-decoration: underline;      /* underline appears when the mouse is over a link */
+}
+
+/* The main content area */
+main {
+  max-width: 750px;                /* stops lines becoming too long to read comfortably */
+  margin: 2rem auto;               /* "auto" on left and right centres the content */
+  padding: 0 1rem;
+}
+
+h2 {
+  color: #2f4f4f;                  /* matches the header colour */
+  border-bottom: 2px solid #ccc;   /* a thin line under each heading */
+  padding-bottom: 0.25rem;
+}
+
+/* The strip at the bottom */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 1rem;
+}
