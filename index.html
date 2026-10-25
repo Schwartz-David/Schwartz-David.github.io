@@ -9,7 +9,7 @@
   <!-- UTF-8 lets you use characters such as £, °, é and ï safely. -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- This makes the page display properly on mobile phones. -->
-  <title>My Practice Website</title>
+  <title>Red Squirrels of Raydaleside</title>
   <!-- The title appears on the browser tab. -->
   <link rel="stylesheet" href="style.css">
   <!-- This links the page to your style sheet, which controls the look. -->
@@ -19,10 +19,11 @@
   <!-- The body holds everything visitors actually see. -->
 
   <header>
-    <h1>My Practice Website</h1>
+    <h1>Red Squirrels of Raydaleside</h1>
     <nav>
       <!-- A simple navigation menu. Links to other pages can be added later. -->
       <a href="index.html">Home</a>
+      <a href="#photos">Photos</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -31,7 +32,23 @@
   <main>
     <section>
       <h2>Welcome</h2>
-      <p>This is my first website, written by hand in HTML and CSS and hosted on GitHub Pages.</p>
+      <p>Welcome to my website about the red squirrels of Raydaleside.</p>
+    </section>
+
+    <section id="photos">
+      <h2>Photos</h2>
+      <!-- A "figure" holds a picture together with its caption ("figcaption"). -->
+      <!-- src = where the photo file is; alt = a description for people who cannot see the image. -->
+      <div class="gallery">
+        <figure>
+          <img src="images/squirrel1.jpg" alt="A red squirrel sitting on a mossy rock, looking to the left">
+          <figcaption>Assessing the situation</figcaption>
+        </figure>
+        <figure>
+          <img src="images/squirrel2.jpg" alt="A red squirrel on a lawn, leaning over a water tray to drink">
+          <figcaption>I needed that!</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="about">
@@ -47,7 +64,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 My Practice Website</p>
+    <p>&copy; 2026 Red Squirrels of Raydaleside</p>
     <!-- &copy; displays the © symbol. -->
   </footer>
 

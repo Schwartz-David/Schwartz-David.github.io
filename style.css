@@ -47,6 +47,32 @@ h2 {
   padding-bottom: 0.25rem;
 }
 
+/* The photo gallery: places the photos side by side,
+   and stacks them one above the other on narrow screens such as phones */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;                       /* space between the photos */
+}
+
+figure {
+  flex: 1 1 300px;                 /* each photo is at least 300px wide where space allows */
+  margin: 0;
+}
+
+figure img {
+  width: 100%;                     /* the photo fills its box... */
+  height: auto;                    /* ...without being stretched out of shape */
+  border-radius: 6px;              /* slightly rounded corners */
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
 /* The strip at the bottom */
 footer {
   text-align: center;
